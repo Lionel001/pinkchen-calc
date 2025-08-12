@@ -1,2 +1,1 @@
-# easy-docs
-easy-docs
+- [@pinkchen/calc - API](https://github.com/Lionel001/pinkchen-docs/calc.md)
