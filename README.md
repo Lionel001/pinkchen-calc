@@ -1,1 +1,1 @@
-- [@pinkchen/calc - API](https://github.com/Lionel001/pinkchen-docs/calc.md)
+- [@pinkchen/calc - API](https://github.com/Lionel001/pinkchen-docs/blob/main/pages/calc.md)
