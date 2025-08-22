@@ -12,7 +12,7 @@
 
 ## 文档地址
 
-[document](https://github.com/Lionel001/pinkchen-docs)
+[English](https://github.com/Lionel001/pinkchen-calc)|中文文档
 
 ## 安装
 
