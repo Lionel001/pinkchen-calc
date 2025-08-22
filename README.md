@@ -45,7 +45,7 @@ import { calc } from '@pinkchen/calc';
 ```html
 <script src="node_modules/@pinkchen/calc/dist/umd/index.js"></script>
 <script>
-  console.log(window.pinkchen.calc('0.1+0.2')); //0.3
+  window.pinkchen.calc('0.1+0.2'); //0.3
   // Refer to specific usage examples for other usages
 </script>
 ```
@@ -75,7 +75,7 @@ calc('oo.a+oo.b*(oo.c-oo.d.d*(oo.e.e+oo.ff))', { oo: { a: 1, b: 2, c: 3, d: { d:
 
 It integrates static mathematical functions from decimal.js. Refer to [decimal.js](https://mikemcl.github.io/decimal.js/#methods) for available functions.
 
-Built-in functions can also be used in the form: DC.max(1,2)
+Built-in functions can also be used with the prefix "DC."; for example: DC.max(1, 2)
 
 ```js
 calc('max(a+b,0.3)', { a: 0.1, b: 0.2 }); //0.3

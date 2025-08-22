@@ -45,7 +45,7 @@ import { calc } from '@pinkchen/calc';
 ```html
 <script src="node_modules/@pinkchen/calc/dist/umd/index.js"></script>
 <script>
-  console.log(window.pinkchen.calc('0.1+0.2')); //0.3
+  window.pinkchen.calc('0.1+0.2'); //0.3
   // 其他用法参考具体使用示例
 </script>
 ```
@@ -75,7 +75,7 @@ calc('oo.a+oo.b*(oo.c-oo.d.d*(oo.e.e+oo.ff))', { oo: { a: 1, b: 2, c: 3, d: { d:
 
 内部集成了 Decimal.js 中的静态数学函数，函数参见[Decimal.js](https://mikemcl.github.io/decimal.js/#methods)
 
-内置函数也可以使用形如：DC.max(1,2)的方式
+也可以用 DC.为前缀来使用内置函数，例如：DC.max(1,2)
 
 ```js
 calc('max(a+b,0.3)', { a: 0.1, b: 0.2 }); //0.3
