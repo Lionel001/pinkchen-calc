@@ -99,19 +99,19 @@ calc('a+getSum(max(a*b, a+b), b)', { a: 1, b: 2, getSum: (a, b) => a + b }); //6
 ```js
 calc('2222.22*2222.22', {}, { separator: true }); //4,938,261.7284
 calc('2222.22*2222.22', {}, { digit: 6 }); //4938261.728400
-calc('2222.22*2222.22', {}, { preUnit: '$' }); //$ 4938261.7284
-calc('2222.22*2222.22', {}, { postUnit: 'USD' }); //4938261.7284 USD
-calc('2222.22*2222.22', {}, { percentage: true }); //49382.617284 %
-calc('2222.22*2222.22', {}, { permillage: true }); //4938.2617284 ‰
+calc('2222.22*2222.22', {}, { preUnit: '$ ' }); //$ 4938261.7284
+calc('2222.22*2222.22', {}, { postUnit: ' USD' }); //4938261.7284 USD
+calc('2222.22*2222.22', {}, { percentage: true }); //49382.617284%
+calc('2222.22*2222.22', {}, { permillage: true }); //4938.2617284‰
 calc(
-  '99.999999/100',
+  '99.9949999/100',
   {},
   {
     separator: true,
-    digit: 6,
-    preUnit: 'Your skill level exceeds',
-    postUnit: 'of peers',
+    digit: 2,
+    preUnit: 'Your skill level exceeds ',
+    postUnit: ' of peers',
     percentage: true,
   }
-); //Your skill level exceeds 99.999999 % of peers
+); //Your skill level exceeds 99.99% of peers
 ```
