@@ -90,6 +90,7 @@ calc('1+abs(-1-a-1)', { a: -1 }); //2
 ```js
 calc('a+max(getSum(a,b)+1, a+c, a+111/(d*e))', { a: 11, b: 12, c: 133, d: 14, e: 15, getSum: (a, b) => a + b }); //155
 calc('a+getSum(max(a*b, a+b), b)', { a: 1, b: 2, getSum: (a, b) => a + b }); //6
+calc('a.a*(b + c + getOne())', { a: { a: 2 }, b: 3, c: 3, getOne: (b) => 1 }); //14
 ```
 
 <span style="color:red;font-size: 20px;">❗❗❗ 注意：不论是内置函数还是自定义函数，所有参数都会使用 Decimal 做转换，所以自定义函数体内部请按照数字来处理参数</span>
@@ -101,8 +102,8 @@ calc('2222.22*2222.22', {}, { separator: true }); //4,938,261.7284
 calc('2222.22*2222.22', {}, { digit: 6 }); //4938261.728400
 calc('2222.22*2222.22', {}, { preUnit: '$ ' }); //$ 4938261.7284
 calc('2222.22*2222.22', {}, { postUnit: ' USD' }); //4938261.7284 USD
-calc('2222.22*2222.22', {}, { percentage: true }); //49382.617284%
-calc('2222.22*2222.22', {}, { permillage: true }); //4938.2617284‰
+calc('2222.22*2222.22', {}, { percentage: true }); //493826172.84%
+calc('2222.22*2222.22', {}, { permillage: true }); //4938261728.4‰
 calc(
   '99.9949999/100',
   {},
