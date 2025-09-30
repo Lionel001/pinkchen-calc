@@ -11,7 +11,7 @@ The ultimate solution for precise front-end calculations, featuring accurate com
 5. ⚒️ Supports custom functions to meet all customization needs
 6. 👨🏻‍🔬 Support scientific notation
 7. 🚀 Faster than [a-calc](https://www.npmjs.com/package/a-calc)
-8. 🌰 Successfully pass 500 [test cases](https://github.com/Lionel001/pinkchen-calc/blob/main/README_CN.md)
+8. 🌰 Successfully pass 500 [test cases](https://github.com/Lionel001/pinkchen-calc/blob/main/index.test.ts)
 
 ## Documentation
 

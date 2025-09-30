@@ -11,7 +11,7 @@
 5. ⚒️ 支持自定义函数，全方面满足定制化需求
 6. 👨🏻‍🔬 支持科学计数法
 7. 🚀 比[a-calc](https://www.npmjs.com/package/a-calc)更快
-8. 🌰 跑通 500 个[测试用例](https://www.npmjs.com/package/a-calc)
+8. 🌰 跑通 500 个[测试用例](https://github.com/Lionel001/pinkchen-calc/blob/main/index.test.ts)
 
 ## 文档地址
 
