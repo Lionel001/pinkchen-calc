@@ -10,8 +10,7 @@
 4. 🔢 集成 Decimal 内部数学函数
 5. ⚒️ 支持自定义函数，全方面满足定制化需求
 6. 👨🏻‍🔬 支持科学计数法
-7. 🚀 比[a-calc](https://www.npmjs.com/package/a-calc)更快
-8. 🌰 跑通 500 个[测试用例](https://github.com/Lionel001/pinkchen-calc/blob/main/index.test.ts)
+7. 🌰 跑通 500 个[测试用例](https://github.com/Lionel001/pinkchen-calc/blob/main/index.test.ts)
 
 ## 文档地址
 
@@ -72,7 +71,7 @@ calc('a*b', { a: 11, b: 22 }); //242
 calc('1+a*b', { a: 11, b: 22 }); //243
 calc('aa*bb.bb', { aa: 22, b: 22, bb: { bb: 33 } }); //726
 calc('oo.a+oo.b*(oo.c-oo.d.d*(oo.e.e+oo.ff))', {
-  oo: { a: 1, b: 2, c: 3, d: { d: 4 }, e: { e: 5 }, ff: 6 },
+  oo: { a: 1, b: 2, c: 3, d: { d: 4 }, e: { e: 5 }, ff: 6 }
 }); //-81
 ```
 
@@ -99,7 +98,7 @@ calc('a+max(getSum(a,b)+1, a+c, a+111/(d*e))', {
   c: 133,
   d: 14,
   e: 15,
-  getSum: (a, b) => a + b,
+  getSum: (a, b) => a + b
 }); //155
 calc('a+getSum(max(a*b, a+b), b)', { a: 1, b: 2, getSum: (a, b) => a + b }); //6
 calc('a.a*(b + c + getOne())', { a: { a: 2 }, b: 3, c: 3, getOne: (b) => 1 }); //14
@@ -124,7 +123,7 @@ calc(
     digit: 2,
     preUnit: '您的技术水平超越了',
     postUnit: '的同行',
-    percentage: true,
+    percentage: true
   }
 ); //您的技术水平超越了99.99%的同行
 ```
@@ -136,7 +135,3 @@ calc('DC.abs(-1e2,5e1,-2e1)'); //100
 calc('9.99e15 * 9.99e15'); //9.98001e31
 calc('1e0 / (1e0 + DC.exp((1.5e1 - 1.2e1) / (2.585e-2 * 3e2)))', {}, { digit: 6 }); //0.404477
 ```
-
-### 与 a-calc 比较
-
-![alt text](https://github.com/Lionel001/pinkchen-calc/blob/main/image.png)

@@ -10,8 +10,7 @@ The ultimate solution for precise front-end calculations, featuring accurate com
 4. 🔢 Integrates decimal.js internal mathematical functions
 5. ⚒️ Supports custom functions to meet all customization needs
 6. 👨🏻‍🔬 Support scientific notation
-7. 🚀 Faster than [a-calc](https://www.npmjs.com/package/a-calc)
-8. 🌰 Successfully pass 500 [test cases](https://github.com/Lionel001/pinkchen-calc/blob/main/index.test.ts)
+7. 🌰 Successfully pass 500 [test cases](https://github.com/Lionel001/pinkchen-calc/blob/main/index.test.ts)
 
 ## Documentation
 
@@ -72,7 +71,7 @@ calc('a*b', { a: 11, b: 22 }); //242
 calc('1+a*b', { a: 11, b: 22 }); //243
 calc('aa*bb.bb', { aa: 22, b: 22, bb: { bb: 33 } }); //726
 calc('oo.a+oo.b*(oo.c-oo.d.d*(oo.e.e+oo.ff))', {
-  oo: { a: 1, b: 2, c: 3, d: { d: 4 }, e: { e: 5 }, ff: 6 },
+  oo: { a: 1, b: 2, c: 3, d: { d: 4 }, e: { e: 5 }, ff: 6 }
 }); //-81
 ```
 
@@ -99,7 +98,7 @@ calc('a+max(getSum(a,b)+1, a+c, a+111/(d*e))', {
   c: 133,
   d: 14,
   e: 15,
-  getSum: (a, b) => a + b,
+  getSum: (a, b) => a + b
 }); //155
 calc('a+getSum(max(a*b, a+b), b)', { a: 1, b: 2, getSum: (a, b) => a + b }); //6
 calc('a.a*(b + c + getOne())', { a: { a: 2 }, b: 3, c: 3, getOne: (b) => 1 }); //14
@@ -124,7 +123,7 @@ calc(
     digit: 2,
     preUnit: 'Your skill level exceeds ',
     postUnit: ' of peers',
-    percentage: true,
+    percentage: true
   }
 ); //Your skill level exceeds 99.99% of peers
 ```
@@ -136,7 +135,3 @@ calc('DC.abs(-1e2,5e1,-2e1)'); //100
 calc('9.99e15 * 9.99e15'); //9.98001e31
 calc('1e0 / (1e0 + DC.exp((1.5e1 - 1.2e1) / (2.585e-2 * 3e2)))', {}, { digit: 6 }); //0.404477
 ```
-
-### Compare with a-calc
-
-![alt text](https://github.com/Lionel001/pinkchen-calc/blob/main/image.png)
